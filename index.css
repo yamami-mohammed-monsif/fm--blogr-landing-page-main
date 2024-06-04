@@ -1,0 +1,56 @@
+:root {
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    /* Set core body defaults */
+    min-height: 100vh;
+    line-height: 1.5;
+
+
+}
+
+/* Set shorter line heights on headings and balance text wrapping */
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* remove default styles on buttons */
+button {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* remove default styles on links */
+a {
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+}
+
+/* remove default styles on lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
