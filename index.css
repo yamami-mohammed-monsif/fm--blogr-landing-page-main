@@ -9,9 +9,11 @@
     --clr-neutral-300 : hsl(207, 13%, 34%);
     --clr-neutral-600 : hsl(240, 10%, 16%);
 
-    --fs-400: 1rem;
+    --fs-400: .8rem;
 
     --ff: "Ubuntu", sans-serif;
+
+    --flex-gap: 1.5rem;
 }
 
 /* Box sizing rules */
@@ -26,15 +28,17 @@ body {
     /* Set core body defaults */
     min-height: 100vh;
     line-height: 1.5;
+    overflow-x: hidden;
 
-
+    font-family: var(--ff);
+    font-size: var(--fs-400);
 }
 
 /* Set shorter line heights on headings and balance text wrapping */
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1.3;
   text-wrap: balance;
 }
 
@@ -65,4 +69,199 @@ a {
 ul {
     list-style: none;
     padding: 0;
+}
+
+.container {
+    width: 70%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+header {
+    background-color: var(--clr-primary-400);
+    background-image: url(images/bg-pattern-intro-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--clr-neutral-100);
+
+    text-align: center;
+
+    padding-block: 2rem;
+}
+
+header button, a {
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+
+    color: var(--clr-neutral-300);
+    background-color: var(--clr-neutral-100);
+    text-align: left;
+    width: 7.5rem;
+
+    padding: 1.3rem;
+    border-radius: .6rem;
+}
+
+#product-menu {
+    left: -1.5rem;
+}
+
+#company-menu {
+    left: 7rem;
+}
+
+#connect-menu {
+    left: 15.5rem;
+}
+
+.menu :not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.logo {
+    width: 5rem;
+}
+
+#navigation-bar {
+    display: flex;
+    gap: var(--flex-gap);
+    align-items: center;
+
+    position: relative;
+}
+
+.registration {
+    display: flex;
+    gap: var(--flex-gap);
+    align-items: center;
+}
+
+.primary-navigation {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* style the sign up and the start for free buttons */
+.sign-up {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-primary-400);
+
+    padding: .6rem 1.5rem;
+    border-radius: 2rem;
+}
+
+/* create the arrow button of dropdown menus */
+.toggle-menu::after {
+    content: var(--content, url(images/icon-arrow-light.svg));
+    display: inline-block;
+    width: .5rem;
+    aspect-ratio: 1;
+    margin-left: .7rem;
+}
+
+#hamburger-btn {
+    display: none;
+}
+
+.header-content {
+    margin-block: 4rem;
+}
+
+h1 {
+    font-size: clamp(1.7rem, 6vw, 2.5rem);
+}
+
+.learn-more {
+    padding: .6rem 1.5rem;
+    margin-left: min(2vw, 1rem);
+    border-radius: 2rem;
+    border: solid 1px;
+}
+
+.intro {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+    color: var(--clr-neutral-200);
+}
+
+
+@media (max-width: 880px) {
+
+    :root {
+        --flex-gap: 2.2rem;
+    }
+
+    nav {
+        position: fixed;
+        inset: 10% 15% 20% 15%;
+        background-color: var(--clr-neutral-100);
+        border: solid 1px;
+
+        color: var(--clr-neutral-600);
+        font-size: 1.2rem;
+
+        flex-direction: column;
+
+        padding: 2.5rem;
+        border-radius: 1rem;
+
+        display: none;
+    }
+
+    /* to make the humberger button go max rigt */
+    .primary-navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #hamburger-btn {
+        display: block;
+        width: 2rem;
+        aspect-ratio: 1;
+
+        background-image: url(images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+
+        margin-top: .2rem;
+    }
+
+    #navigation-bar {
+        flex-direction: column;
+        gap: var(--flex-gap);
+    }
+
+    .registration {
+        flex-direction: column;
+
+        border-top: solid 1px var(--clr-neutral-200);
+        padding-top: 1.5rem;
+    }
+
+    .registration .sign-up {
+        background-color: var(--clr-primary-400);
+        color: var(--clr-neutral-100);
+
+        padding-inline: 2rem;
+    }
+
+    .toggle-menu::after {
+        content: var(--content, url(images/icon-arrow-dark.svg));
+    }
+
+    .menu {
+        position: static;
+    }
 }
