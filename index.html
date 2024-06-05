@@ -23,13 +23,13 @@
             <img src="images/logo.svg" alt="" class="logo">
           </div>
 
-          <button id="hamburger-btn"></button>
+          <button id="hamburger-btn" data-nav="closed" aria-controls="navbar"></button>
 
-          <nav>
+          <nav id="navbar" aria-expanded="false">
             <ul id="navigation-bar">
               <li>
                 <button class="toggle-menu" id="product-toggle" aria-controls="product-menu">Product</button>
-                <ul id="product-menu" class="menu">
+                <ul id="product-menu" class="menu"  data-menu="closed">
                   <li><a href="#">Overview</a></li>
                   <li><a href="#">Pricing</a></li>
                   <li><a href="#">Marketplace</a></li>
@@ -39,7 +39,7 @@
               </li>
               <li>
                 <button class="toggle-menu" id="company-toggle" aria-controls="company-menu">Company</button>
-                <ul id="company-menu" class="menu">
+                <ul id="company-menu" class="menu" data-menu="closed">
                   <li><a href="#">About</a></li>
                   <li><a href="#">Team</a></li>
                   <li><a href="#">Blog</a></li>
@@ -48,7 +48,7 @@
               </li>
               <li>
                 <button class="toggle-menu" id="connect-toggle" aria-controls="connect-menu">Connect</button>
-                <ul id="connect-menu" class="menu">
+                <ul id="connect-menu" class="menu" data-menu="closed">
                   <li><a href="#">Contact</a></li>
                   <li><a href="#">Newsletter</a></li>
                   <li><a href="#">LinkedIn</a></li>
@@ -120,5 +120,7 @@
   Contact
   Newsletter
   LinkedIn -->
+
+  <script src="index.js"></script>
 </body>
 </html>
