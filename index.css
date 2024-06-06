@@ -31,6 +31,7 @@ body {
     overflow-x: hidden;
 
     font-family: var(--ff);
+    text-align: center;
 }
 
 /* Set shorter line heights on headings and balance text wrapping */
@@ -88,7 +89,6 @@ header {
     color: var(--clr-neutral-100);
 
     font-size: var(--fs-300);
-    text-align: center;
 
     padding-block: 2rem;
     border-bottom-left-radius: 4rem;
@@ -324,7 +324,6 @@ h1 {
 
 
 #section-2 {
-    text-align: center;
     color: var(--clr-neutral-300);
     margin-block: 5rem;
 
