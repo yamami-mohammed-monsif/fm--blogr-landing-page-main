@@ -376,8 +376,8 @@ h3 {
 @media (max-width: 600px) {
 
     #section-2 {
-    max-width: 70%;
-    margin-inline: auto;
+        max-width: 70%;
+        margin-inline: auto;
     }
 
     #section-2 img {
@@ -442,5 +442,30 @@ h3 {
         padding: 0;
         margin-top: 4rem;
         text-align: center;
+    }
+}
+
+
+/* ************************************************ */
+/* -------------------section 4-------------------- */
+/* ************************************************ */
+
+#section-4 {
+    margin-block: 5rem;
+}
+
+#section-4 .grid {
+    margin-right: 15%;
+}
+
+@media (max-width: 600px) {
+
+    #section-4 {
+        width: 70%;
+        margin-inline: auto;
+    }
+
+    #section-4 .grid {
+        margin: 0;
     }
 }
