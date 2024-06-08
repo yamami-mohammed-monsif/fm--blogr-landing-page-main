@@ -467,5 +467,46 @@ h3 {
 
     #section-4 .grid {
         margin: 0;
+        text-align: center;
+    }
+}
+
+
+/* ************************************************ */
+/* -------------------footer-------------------- */
+/* ************************************************ */
+
+footer {
+    background-color: var(--clr-neutral-600);
+    color: var(--clr-neutral-100);
+
+    padding-block: 5rem;
+    border-top-right-radius: var(--secton-border-radius);
+}
+
+.grid-4-col {
+    display: grid;
+    gap: 2rem;
+}
+
+footer a {
+    font-weight: 400;
+}
+
+footer img {
+    margin-inline: auto;
+    margin-bottom: 4rem;
+}
+
+.menu-header {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+
+@media (min-width: 600px) {
+
+    .grid-4-col {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
