@@ -180,6 +180,15 @@ nav {
     border-radius: 2rem;
 }
 
+.sign-up:hover {
+    background-color: var(--clr-primary-300);
+    color: var(--clr-neutral-100);
+}
+
+.toggle-menu:hover {
+    text-decoration: underline;
+}
+
 /* create the arrow button of dropdown menus */
 .toggle-menu::after {
     content: var(--content, url(images/icon-arrow-light.svg));
@@ -214,6 +223,11 @@ h1 {
     margin-left: min(2vw, 1rem);
     border-radius: 2rem;
     border: solid 1px;
+}
+
+.learn-more:hover {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-primary-400);
 }
 
 
@@ -491,6 +505,10 @@ footer {
 
 footer a {
     font-weight: 400;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer img {
