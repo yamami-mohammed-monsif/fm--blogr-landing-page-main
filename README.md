@@ -18,6 +18,8 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 ## Demo
 
+https://yamami-mohammed-monsif.github.io/fm--blogr-landing-page-main/
+
 ## Description
 
 Blogr is a modern landing page for a publishing platform designed to help users grow their audience and build their online brand. This responsive web page provides an intuitive interface and robust infrastructure to showcase the features, products, and services of Blogr, while ensuring seamless user experience across various devices.
@@ -45,6 +47,18 @@ The Blogr landing page includes a visually appealing header with the Blogr logo 
 - Event Listeners: For capturing and responding to user actions like clicks on the hamburger menu or dropdown buttons.
 
 ## Installation
+
+**Clone the repository:**
+
+   git clone https://yamami-mohammed-monsif.github.io/fm--blogr-landing-page-main/
+
+**Navigate to the project directory:**
+
+   cd fm--blogr-landing-page-main
+
+**Open the HTML file:**
+
+   open index.html
 
 ## Usage
 
